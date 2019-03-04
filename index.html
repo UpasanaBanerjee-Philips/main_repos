@@ -1,7 +1,184 @@
-<p>Goodbye</p>
-<p>Testing Something</p>
-<div>Another Text</div>
-<div>Lets push to github</div>
-<div> My New changes </div>
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
 
-<div>Testing Something</div>
+C:\Users\320008510\Documents\Git_Project>git remote -v
+MyRepos https://github.com/upasanabanerjee/main_repos.git (fetch)
+MyRepos https://github.com/upasanabanerjee/main_repos.git (push)
+Sample  https://github.com/upasanabanerjee/main_repos.git (fetch)
+Sample  https://github.com/upasanabanerjee/main_repos.git (push)
+githubRepo      https://github.com/upasanabanerjee/main_repos.git (fetch)
+githubRepo      https://github.com/upasanabanerjee/main_repos.git (push)
+githubRepos     https://github.com/upasanabanerjee/main_repos.git (fetch)
+githubRepos     https://github.com/upasanabanerjee/main_repos.git (push)
+githubRepository        https://github.com/upasanabanerjee/main_repos.git (fetch
+)
+githubRepository        https://github.com/upasanabanerjee/main_repos.git (push)
+
+origin  https://github.com/upasanabanerjee/main_repos.git (fetch)
+origin  https://github.com/upasanabanerjee/main_repos.git (push)
+upasanaRepos    https://github.com/upasanabanerjee/main_repos.git (fetch)
+upasanaRepos    https://github.com/upasanabanerjee/main_repos.git (push)
+upasanagit      https://github.com/upasanabanerjee/main_repos.git (fetch)
+upasanagit      https://github.com/upasanabanerjee/main_repos.git (push)
+upasanarepos    https://github.com/upasanabanerjee/main_repos.git/ (fetch)
+upasanarepos    https://github.com/upasanabanerjee/main_repos.git/ (push)
+
+C:\Users\320008510\Documents\Git_Project>git branch
+* (HEAD detached at 412b16f)
+  master
+  new-feature
+
+C:\Users\320008510\Documents\Git_Project>git checkout master
+Previous HEAD position was 412b16f Testing
+Switched to branch 'master'
+Your branch is ahead of 'upasanaRepos/master' by 5 commits.
+  (use "git push" to publish your local commits)
+
+C:\Users\320008510\Documents\Git_Project>clear
+'clear' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\320008510\Documents\Git_Project>git checkout -b mrmain
+Switched to a new branch 'mrmain'
+
+C:\Users\320008510\Documents\Git_Project>git push origin mrmain
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 668 bytes | 668.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'mrmain' on GitHub by visiting:
+remote:      https://github.com/upasanabanerjee/main_repos/pull/new/mrmain
+remote:
+To https://github.com/upasanabanerjee/main_repos.git
+ * [new branch]      mrmain -> mrmain
+
+C:\Users\320008510\Documents\Git_Project>git add *
+
+C:\Users\320008510\Documents\Git_Project>git status
+On branch mrmain
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   protocol/a.xml
+        new file:   protocol/b.xml
+
+
+C:\Users\320008510\Documents\Git_Project>git commit -m "checking in protocol dir
+"
+[mrmain d600583] checking in protocol dir
+ Committer: Upasana Banerjee <upasana.banerjee@philips.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 protocol/a.xml
+ create mode 100644 protocol/b.xml
+
+C:\Users\320008510\Documents\Git_Project>git push
+fatal: The current branch mrmain has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin mrmain
+
+
+C:\Users\320008510\Documents\Git_Project>git push origin mrmain
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 408 bytes | 408.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/upasanabanerjee/main_repos.git
+   1a4af30..d600583  mrmain -> mrmain
+
+C:\Users\320008510\Documents\Git_Project>git checkout -b upasana_dev
+Switched to a new branch 'upasana_dev'
+
+C:\Users\320008510\Documents\Git_Project>git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+C:\Users\320008510\Documents\Git_Project>git add .
+
+C:\Users\320008510\Documents\Git_Project>git commit -m "a protocol changed"
+[upasana_dev a72385c] a protocol changed
+ Committer: Upasana Banerjee <upasana.banerjee@philips.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+
+C:\Users\320008510\Documents\Git_Project>git branch
+  master
+  mrmain
+  new-feature
+* upasana_dev
+
+C:\Users\320008510\Documents\Git_Project>git fetch origin mrmain
+remote: Enumerating objects: 11, done.
+remote: Counting objects: 100% (11/11), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (7/7), done.
+From https://github.com/upasanabanerjee/main_repos
+ * branch            mrmain     -> FETCH_HEAD
+   d600583..3a14c05  mrmain     -> origin/mrmain
+
+C:\Users\320008510\Documents\Git_Project>git checkout origin/mrmain --theirs --
+protocol/*
+
+C:\Users\320008510\Documents\Git_Project>git status
+On branch upasana_dev
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   protocol/a.xml
+
+
+C:\Users\320008510\Documents\Git_Project>git checkout origin/mrmain --theirs --
+protocol/*
+
+C:\Users\320008510\Documents\Git_Project>git status
+On branch upasana_dev
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   protocol/a.xml
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ~$index.html
+
+
+C:\Users\320008510\Documents\Git_Project>git status
+On branch upasana_dev
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   protocol/a.xml
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ~$index.html
+
+
+C:\Users\320008510\Documents\Git_Project>
